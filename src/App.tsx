@@ -157,7 +157,7 @@ export default function App() {
 
   return <main className={`experience phase-${phase} ${reduced ? 'reduced' : ''}`} style={{ '--scene-width': typeof plane.width === 'number' ? `${plane.width}px` : undefined, '--scene-height': typeof plane.height === 'number' ? `${plane.height}px` : undefined } as CSSProperties} aria-busy={busy}>
     <header className="masthead">
-      <a className="wordmark" href="/" aria-label="Return to overview">VEYRA</a>
+      <a className="wordmark" href="/" aria-label="Return to overview">Cutaway</a>
       <span className="header-middle">Electric vehicle design</span>
       <span className="concept-label">Independent concept</span>
     </header>
@@ -224,7 +224,7 @@ export default function App() {
         <div className="feature-note"><h3>Body finishes</h3><p>Five colours. From studio silver to a vivid electric green.</p></div>
         <div className="feature-note"><h3>Wheel designs</h3><p>Three expressions. Compare multi-spoke, aero and forged wheels.</p></div>
       </div>
-      <div className="footer-baseline"><span>VEYRA — Design study</span><span>{phase === 'overview' ? 'Explore systems. Personalise the exterior.' : 'Illustrative engineering. Concept visualisation.'}</span></div>
+      <div className="footer-baseline"><span>Cutaway — Design study</span><span>By Sohan Zakaria</span><span>{phase === 'overview' ? 'Explore systems. Personalise the exterior.' : 'Illustrative engineering. Concept visualisation.'}</span></div>
     </footer>
     <p className="sr-only" role="status" aria-live="polite">{busy ? `${phase === 'entering' ? 'Opening' : 'Closing'} ${current.label}` : phase === 'detail' ? `${current.label} view. Press Escape to return.` : 'Vehicle overview. Choose a system.'}</p>
     {error && <div className="error-message" role="alert">{error}<button onClick={() => setError('')} aria-label="Dismiss message"><X size={16}/></button></div>}
